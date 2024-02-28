@@ -1,9 +1,6 @@
 use ecc::{
     elliptic_curve::short_weierstrass::ecc_def,
-    finite_field::{
-        ball,
-        field::{self, FiniteField, FiniteFieldTrait},
-    },
+    finite_field::field::{self, FiniteField, FiniteFieldTrait},
 };
 
 fn main() {
@@ -30,7 +27,6 @@ fn main() {
     println!("{}-{}={}", a, b, c);
 
     println!("Hello, world!");
-    ball::play();
 
     field::main();
     ecc_def::main();
